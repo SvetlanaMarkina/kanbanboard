@@ -1,0 +1,66 @@
+@import '../UserMenu/UserMenu.css';
+@import '../List/List.css';
+@import '../../dop/Details/Details.css';
+@import '../../dop/Lists/Lists.css';
+@import '../../styles/media.css';
+
+.App {
+  max-width: 1235px;
+  min-height: 100%;
+  background-color: #0079bf;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color:  #0067A3;
+  padding: 8px 15px;
+}
+
+.header__title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+  color: white;
+}
+
+.kanbanBoard {
+  display: flex;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  padding: 17px 21px;
+  background-color: #0067A3;  
+}
+
+.footer__span {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: white;
+  flex-grow: 1;
+  max-width: fit-content;
+}
+
+.footer__span:first-child {
+  margin-right: 35px;
+}
+
+.footer__span:last-child {
+  max-width: 100%;
+  text-align: end;
+}
+

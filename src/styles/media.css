@@ -1,0 +1,32 @@
+@media (max-width: 340px) {
+    .header__title {
+        display: none;
+    }
+
+    .App .header {
+        justify-content: flex-end;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .App .footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .kanbanBoard__lists {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .footer .footer__span {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+    }
+
+
+}
+

@@ -1,0 +1,200 @@
+@import '../UserSelection/UserSelection.css';
+
+
+.kanbanBoard__list {
+    background-color: #ebecf0;
+    padding: 12px 0 12px 12px;
+    border-radius: 10px;
+    height: fit-content;
+    width: 100%;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: black;
+    margin-bottom: 15px;
+
+}
+
+.tasks {
+    max-height: 500px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding-right: 12px;
+}
+
+.task {
+    background-color: white;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    transition: background-color ease-in-out 0.1s;
+    cursor: pointer;
+}
+
+.task:hover {
+    transition: background-color ease-in-out 0.1s;
+    background-color: #F4FAB2;
+}
+
+.inputTask {
+    background-color: white;
+    width: 100%;
+    cursor: text;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 17px;
+    transition: background-color ease-in-out 0.1s;
+}
+
+.tasks::-webkit-scrollbar {
+    width: 12px;
+} 
+
+.tasks::-webkit-scrollbar-thumb {
+    background-color: #CBCBCB;
+    border-radius: 6px;
+}
+
+.addBtn {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    transition: background-color ease-in-out 0.1s;
+}
+
+.addBtn span {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    transition: color ease-in-out 0.1s;
+    color: #5e6c84;
+}
+
+.addBtn svg {
+    margin-right: 5px;
+}
+
+.addBtn svg path {
+    transition: fill ease-in-out 0.1s;
+}
+
+.addBtn:hover {
+    background-color: #F4FAB2;
+    transition: background-color ease-in-out 0.1s;
+}
+
+.addBtn:hover span {
+    color: #FFD100;
+    transition: color ease-in-out 0.1s;
+}
+
+.addBtn:hover svg path {
+    fill:  #FFD100;
+    transition: fill ease-in-out 0.1s;
+}
+
+.addBtn:disabled  {
+    cursor: default;
+}
+
+.addBtn:disabled span {
+    color:ghostwhite;
+}
+
+.addBtn:disabled svg path {
+    fill:  ghostwhite;
+}
+
+.addBtn:disabled:hover span {
+    background-color: transparent;
+    color:  #B1B4B9;
+}
+
+.addBtn:disabled:hover svg path {
+    fill: #B1B4B9;
+}
+
+.submitBtn {
+    display: block;
+    background-color: #0079BF;
+    padding: 5px 10px;
+    transition: background-color ease-in-out 0.1s;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.submitBtn:hover {
+    background-color: #F4FAB2;
+    transition: background-color ease-in-out 0.1s;
+    
+}
+
+.submitBtn svg {
+    display: none;
+}
+
+.submitBtn span {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
+}
+
+.submitBtn span:hover {
+    color: red;
+    transition: color ease-in-out 0.1s;
+}
+
+
+.cancelBtn {
+    display: block;
+    background-color: #F35E7E;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color ease-in-out 0.1s;
+}
+
+.cancelBtn:hover {
+    background-color: #F39DAF;
+    transition: background-color ease-in-out 0.1s;
+}
+
+.cancelBtn svg {
+    display: none;
+}
+
+.cancelBtn span {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
+}
+
+

@@ -1,0 +1,105 @@
+.kanbanBoard__details {
+    position: relative;
+    background-color: white;
+    width: 100%;
+    border-radius: 5px;
+    padding: 22px 28px;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: black;
+    margin-bottom: 15px;
+    max-width: 620px;
+}
+
+.editField {
+    height: 548px;
+    width: 100%;
+    padding: 20px;
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+    outline: none;
+}
+
+.description {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    max-width: 620px;
+    color: black;
+}
+
+.buttonBlock {
+    display: flex;
+    position: absolute;
+    top: 17px;
+    right: 23px;
+    justify-content: flex-end;
+    align-items: center;
+    width: 200px;
+}
+
+.editBtn {
+    background-color: transparent;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    transition: background-color ease-in-out 0.1s;
+    margin-right: 20px;
+}
+
+.editBtn svg path {
+    fill: orange;
+    transition: fill ease-in-out 0.1s;
+}
+
+.editBtn svg path:hover {
+    fill: red;
+    transition: fill ease-in-out 0.1s;
+}
+
+.completeBtn {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.completeBtn svg path {
+    fill: green;
+    transition: fill ease-in-out 0.1s;
+}
+
+.completeBtn svg path:hover {
+    fill: red;
+    transition: fill ease-in-out 0.1s;
+}
+
+.closeBtn {
+    display: block;
+    cursor: pointer;
+    height: 23px;
+    transition: stroke ease-in-out 0.1s;
+}
+
+.closeBtn svg path {
+    stroke: black;
+    transition: stroke ease-in-out 0.1s;
+}
+
+.closeBtn svg path:hover {
+    stroke: red;
+    transition: stroke ease-in-out 0.1s;
+}
+
+

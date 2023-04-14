@@ -1,0 +1,64 @@
+.userSelection {
+    transition: height ease-in-out 0.1s;
+    overflow-y: hidden;
+}
+
+.wrap {
+    position: relative;
+}
+
+.userSelection__active {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    z-index: 1;
+    background-color: white;
+    padding: 9px;
+    border-radius: 5px;
+    height: 38px;
+}
+
+.userSelection__active p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    flex-grow: 1;
+    color: black;
+}
+
+.userSelection__active svg {
+    transition: transform ease-in-out 0.1s;
+    margin-right: 11px;
+}
+
+.userSelection__options {
+    z-index: 0;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.userSelection__option {
+    padding: 8px;
+    display: flex;
+    background-color: white;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    transition: background-color ease-in-out 0.1s;
+    cursor: pointer;
+}
+
+.userSelection__option:hover {
+    background-color: #DEDEDE;
+    transition: background-color ease-in-out 0.1s;
+}
+
+.userSelection__option:first-child {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.userSelection__option:last-child {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+    

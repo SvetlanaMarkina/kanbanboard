@@ -1,0 +1,55 @@
+.userMenu {
+    display: flex;
+    align-items: center;
+    cursor: pointer; 
+    position: relative;
+}
+
+.userMenu__avatar {
+   height: 40px;
+   width: 40px;
+   margin-right: 7px;
+}
+
+.userMenu__avatar img {
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.userMenu__menu-active {
+    display: block;
+    position: absolute;
+    width: 134px;
+    right: 0;
+    top: 50px;
+    z-index: 1;
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.userMenu__menu-active a {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: black;
+    transition: color ease-in-out 0.1s;
+}
+
+.userMenu__menu-active a:first-child {
+    margin-bottom: 10px;
+}
+
+.userMenu__menu-active a:hover {
+    color: red;
+   transition: color ease-in-out 0.1s;
+}
+
+.userMenu__menu {
+    display: none;
+}
+
